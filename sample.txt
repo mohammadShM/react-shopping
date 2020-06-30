@@ -1,0 +1,10 @@
+// git log
+// git status
+// git tag
+// git branch
+// git diff HEAD
+// git reset nameFile
+// git add .
+// git commit ""
+// git checkout -- nameFile
+//
