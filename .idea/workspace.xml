@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeb51e47-3724-43bb-a240-d4ed5ba96561" name="Default Changelist" comment="1 =&gt; create navbar&#10;2 =&gt; install bootstrap&#10;3 =&gt;">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tools1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tools2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tools3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/product/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/product/product-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/product/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="aeb51e47-3724-43bb-a240-d4ed5ba96561" name="Default Changelist" comment="1 =&gt; data fetch from server&#10;2 =&gt; change ui and css">
+      <change afterPath="$PROJECT_DIR$/public/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tools4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tools5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tools6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/comment/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/comment/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/comment/item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/comment/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/product/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/font/font/font.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +38,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1e2QaAgyO3Ok1cxGivafbTbBgxd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,15 +59,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/bootstrap/scss/_navbar.scss" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts&#10;C:/Users/mohammadshm/Desktop/react_js/reactChannelMernStack/react-shopping/node_modules/bootstrap/scss/_navbar.scss&#10;C:/Users/mohammadshm/Desktop/react_js/reactChannelMernStack/react-shopping/yarn.lock&#10;C:/Users/mohammadshm/Desktop/react_js/reactChannelMernStack/react-shopping/node_modules/@types/istanbul-lib-coverage/index.d.ts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\mohammadshm\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mohammadshm\Desktop\react_js\reactChannelMernStack\react-shopping\public" />
+      <recent name="C:\Users\mohammadshm\Desktop\react_js\reactChannelMernStack\react-shopping\src\font" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -66,44 +82,92 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593517268551</updated>
-      <workItem from="1593517269766" duration="18056000" />
+      <workItem from="1593517269766" duration="18349000" />
+      <workItem from="1593603613209" duration="4467000" />
+      <workItem from="1593608125312" duration="15097000" />
+      <workItem from="1593682319960" duration="14135000" />
+      <workItem from="1593770680848" duration="115000" />
+      <workItem from="1593770819444" duration="2698000" />
+      <workItem from="1593857529862" duration="5750000" />
+      <workItem from="1593937751194" duration="9478000" />
     </task>
+    <task id="LOCAL-00001" summary="1 =&gt; create navbar&#10;2 =&gt; install bootstrap&#10;3 =&gt; create page for product &#10;4 =&gt; import react router">
+      <created>1593546857589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593546857589</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1 =&gt; create navbar&#10;2 =&gt; install bootstrap&#10;3 =&gt; create page for product &#10;4 =&gt; import react router" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 =&gt; create navbar&#10;2 =&gt; install bootstrap&#10;3 =&gt; create page for product &#10;4 =&gt; import react router" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="332" y="0" key="CommitChangelistDialog2" timestamp="1593546151918">
+    <state x="361" y="71" key="#Inspections" timestamp="1593612676991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="332" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593546151918" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1593518128608">
+    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1593612676991" />
+    <state x="521" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593699358443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593518128608" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1593518128608">
+    <state x="521" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1593699358443" />
+    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1593608036880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593518128608" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1593518128607">
+    <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1536.824@0.0.1536.824" timestamp="1593608036880" />
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593770799100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593518128607" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1593518128608">
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1593770799100" />
+    <state x="332" y="0" key="CommitChangelistDialog2" timestamp="1593693060748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593518128608" />
+    <state x="332" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593693060748" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593630517007">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593630517007" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1593546970566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593546970566" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1593546970565">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593546970565" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1593546970565">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593546970565" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1593546970565">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593546970565" />
     <state x="349" y="147" key="IDE.errors.dialog" timestamp="1593517273434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1593517273434" />
-    <state x="277" y="55" key="SettingsEditor" timestamp="1593518553793">
+    <state x="277" y="55" key="SettingsEditor" timestamp="1593608216097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593518553793" />
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593608216097" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593546860861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593546860861" />
   </component>
 </project>

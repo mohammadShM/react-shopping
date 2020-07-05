@@ -1,46 +1,95 @@
-import React from "react";
+import React, {Fragment, useEffect, useState} from 'react';
+// noinspection ES6CheckImport
+import {Link, useParams} from "react-router-dom";
+import {HELPER_ADDRESS_FOR_IMG, productService} from "../components/product";
+import {CommentList, CreateComment} from "../components/comment";
 
-export function Detail() {
+export function DetailPage() {
 
-    const data = {
-        id: 1,
-        title: 'ابزار آلات نوین',
-        price: '2000 تومان',
-        pic: process.env.PUBLIC_URL + '/tools1.jpg',
-        desc: `لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                 از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                 روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی 
-                تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-                 می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-                 جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
-                 رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد،
-                 در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، 
-                و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، 
-                و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد .`,
+    // this.props.match.params.id for function component
+    const {id} = useParams();
+    // setState for function component
+    const [data, setData] = useState({});
+
+    // componentDidMount for function component
+    useEffect(() => {
+        const fetchBusinesses = async () => {
+            // axios by promise
+            // productService.getProductById(id)
+            //     .then(response => setData(response.data));
+            // axios by async
+            const {data} = await productService.getProductById(id);
+            setData(data);
+        };
+        fetchBusinesses().then();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    if (!data) {
+        return <div className="text-center">Loading ...</div>
+    }
+    // for post comment to server
+    const submitComment = async (comment) => {
+        // axios by async
+        const response = await productService.addComment(data.id, comment);
+        if (response.status === 200) {
+            const dataComment = await productService.getComments(data.id);
+            setData({...data, comments: dataComment.data});
+        }
     };
 
-    return <div className="container">
+    return <Fragment>
         <div className="row">
             <div className="col-5">
-                <img src={data.pic} alt={data.id} width="100%" height="100%"/>
+                <div className=" card bg-success shadow-lg mt-5">
+                    <img src={HELPER_ADDRESS_FOR_IMG + data.pic} alt={data.id}
+                         className="card-img"/>
+                </div>
             </div>
-            <div className="col-7" style={styles.content}>
+            <div className="col-7 mt-5" style={styles.content}>
                 <h1>{data.title}</h1>
-                <p>{data.desc}</p>
+                <p style={styles.pText}>{data.desc}</p>
                 <strong style={styles.price}>{data.price}</strong>
+                <br/>
+                <br/>
+                <Link to="/"><span className="btn btn-primary pr-3 pl-3">
+                بازگشت
+            </span></Link>
             </div>
         </div>
-        <div className="mb-5" />
-    </div>
+        <hr className="mt-5"/>
+        <div className="row mt-5 mb-5">
+            <div className="col-10 mx-auto" style={styles.content}>
+                <CommentList comments={data.comments || []}/>
+                <br/>
+                <hr/>
+                <br/>
+                <CreateComment onComment={submitComment}/>
+            </div>
+        </div>
+    </Fragment>
 }
 
 const styles = {
     price: {
         color: 'green',
-        fontSize: '22px',
+        fontSize: '25px',
     },
     content: {
         textAlign: 'right',
         description: 'rtl'
+    },
+    img: {
+        width: '100%',
+        height: '100%',
+        backgroundSize: 'content',
+    },
+    pText: {
+        textAlign: 'justify',
+        textJustify: 'inter-word',
+        letterSpacing: '1px',
+        fontSize: '21px',
+        lineHeight: '1.8',
+        textAlignLast: 'right',
     }
 };
+
