@@ -1,0 +1,19 @@
+.card-box-for-me {
+   background-color: #fefefe;
+   border-radius: 8px;
+   box-shadow: 1px 1px 11px rgba(33, 33, 33, 0.2);
+   padding: 12px 12px 36px 12px;
+   margin-top: 120px;
+}
+.card-box-for-me h1 {
+   margin-bottom: 30px;
+   font-family: digikala, serif;
+}
+.zoom-for-me {
+   transition: transform 0.2s;
+   cursor: pointer;
+}
+.zoom-for-me:hover {
+   transform: scale(1.05);
+   box-shadow: 1px 1px 11px rgba(33, 33, 33, 0.2);
+}

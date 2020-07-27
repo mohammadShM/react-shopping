@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeb51e47-3724-43bb-a240-d4ed5ba96561" name="Default Changelist" comment="1 =&gt; data fetch from server&#10;2 =&gt; change ui and css">
-      <change afterPath="$PROJECT_DIR$/public/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tools4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tools5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tools6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comment/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comment/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comment/item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comment/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/product/service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/font/digikala/digikala.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/font/font/font.css" afterDir="false" />
+    <list default="true" id="aeb51e47-3724-43bb-a240-d4ed5ba96561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comment/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/create.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/product/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +27,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -89,7 +64,11 @@
       <workItem from="1593770680848" duration="115000" />
       <workItem from="1593770819444" duration="2698000" />
       <workItem from="1593857529862" duration="5750000" />
-      <workItem from="1593937751194" duration="9478000" />
+      <workItem from="1593937751194" duration="9722000" />
+      <workItem from="1594123015007" duration="735000" />
+      <workItem from="1594212315982" duration="1147000" />
+      <workItem from="1595842218307" duration="304000" />
+      <workItem from="1595843305902" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="1 =&gt; create navbar&#10;2 =&gt; install bootstrap&#10;3 =&gt; create page for product &#10;4 =&gt; import react router">
       <created>1593546857589</created>
@@ -98,23 +77,24 @@
       <option name="project" value="LOCAL" />
       <updated>1593546857589</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1 =&gt; data fetch from server&#10;2 =&gt; change ui and css&#10;3 =&gt; create comment component&#10;4 =&gt; create insert new comment">
+      <created>1593957030295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593957030295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
-      </list>
-    </option>
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1 =&gt; create navbar&#10;2 =&gt; install bootstrap&#10;3 =&gt; create page for product &#10;4 =&gt; import react router" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 =&gt; create navbar&#10;2 =&gt; install bootstrap&#10;3 =&gt; create page for product &#10;4 =&gt; import react router" />
+    <MESSAGE value="1 =&gt; data fetch from server&#10;2 =&gt; change ui and css&#10;3 =&gt; create comment component&#10;4 =&gt; create insert new comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 =&gt; data fetch from server&#10;2 =&gt; change ui and css&#10;3 =&gt; create comment component&#10;4 =&gt; create insert new comment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Inspections" timestamp="1593612676991">
@@ -129,14 +109,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1536.824@0.0.1536.824" timestamp="1593608036880" />
-    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593770799100">
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595842276728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1593770799100" />
-    <state x="332" y="0" key="CommitChangelistDialog2" timestamp="1593693060748">
+    <state x="449" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1595842276728" />
+    <state x="332" y="0" key="CommitChangelistDialog2" timestamp="1593957026987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="332" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593693060748" />
+    <state x="332" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593957026987" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593630517007">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -165,9 +145,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1593608216097" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593546860861">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593957032924">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593546860861" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593957032924" />
   </component>
 </project>

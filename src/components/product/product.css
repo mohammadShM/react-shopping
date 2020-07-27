@@ -1,0 +1,15 @@
+.card-for-me {
+   cursor: pointer;
+   transition: transform 0.2s;
+}
+.card-for-me:hover {
+   box-shadow: 1px 1px 11px rgba(33, 33, 33, 0.2);
+}
+.zoom-for-me {
+   transition: transform 0.2s;
+   cursor: pointer;
+}
+.zoom-for-me:hover {
+   transform: scale(1.05);
+   box-shadow: 1px 1px 11px rgba(33, 33, 33, 0.2);
+}
