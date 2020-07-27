@@ -30,6 +30,7 @@ export function DetailPage() {
       let unsubscribe = cartStore.subscribe(() => {
          console.log(cartStore.getState());
       });
+      // for redux =====
       // componentWillUnmount =====
       return () => {
          // Anything in here is fired on component unmount.
