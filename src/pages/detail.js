@@ -9,6 +9,7 @@ import {
 } from "../components/product";
 import { CommentList, CreateComment } from "../components/comment";
 import "./detail.css";
+import "../font/font/font.css";
 export function DetailPage() {
    // this.props.match.params.id for function component
    const { id } = useParams();

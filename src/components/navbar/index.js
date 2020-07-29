@@ -1,5 +1,6 @@
 import React from "react";
 import { CartIcon } from "../cart";
+import { NavLink, Link } from "react-router-dom";
 
 export function Navbar() {
    return (
@@ -23,15 +24,30 @@ export function Navbar() {
          </button>
          <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ">
-               <li className="nav-item active">
-                  <a className="nav-link " href="/">
+               <li className="nav-item ">
+                  <NavLink
+                     activeClassName="active"
+                     className="nav-link "
+                     to="/"
+                  >
                      خانه <span className="sr-only">(current)</span>
-                  </a>
+                  </NavLink>
+               </li>
+               <li className="nav-item ">
+                  <NavLink
+                     activeClassName="active"
+                     className="nav-link "
+                     to="/cart"
+                  >
+                     سبد خرید <span className="sr-only">(current)</span>
+                  </NavLink>
                </li>
             </ul>
-            <div className="mr-auto pl-5">
-               <CartIcon />
-            </div>
+            <Link to="/cart" className="mr-auto pl-5">
+               <div>
+                  <CartIcon />
+               </div>
+            </Link>
             <form className="form-inline my-2 my-lg-0 ">
                <input
                   className="form-control mr-sm-2 ml-1"
