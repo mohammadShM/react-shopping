@@ -5,10 +5,18 @@ import "../font/font/font.css";
 export class HomePage extends Component {
    state = { products: [] };
 
-   componentDidMount() {
+   fetchData() {
       productService
-         .getProducts()
+         .getProducts(this.props.location.search)
          .then((response) => this.setState({ products: response.data }));
+   }
+
+   componentDidMount() {
+      this.fetchData();
+   }
+
+   componentDidUpdate() {
+      this.fetchData();
    }
 
    render() {

@@ -16,9 +16,7 @@ function App() {
             <div style={{ marginTop: "80px" }} />
             <div className="container">
                <Switch>
-                  <Route exact path="/">
-                     <HomePage />
-                  </Route>
+                  <Route exact path="/" component={HomePage} />
                   <Route exact path="/detail/:id">
                      <DetailPage />
                   </Route>

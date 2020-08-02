@@ -1,6 +1,7 @@
 import React from "react";
 import { CartIcon } from "../cart";
 import { NavLink, Link } from "react-router-dom";
+import { Search } from "./search";
 
 export function Navbar() {
    return (
@@ -48,20 +49,7 @@ export function Navbar() {
                   <CartIcon />
                </div>
             </Link>
-            <form className="form-inline my-2 my-lg-0 ">
-               <input
-                  className="form-control mr-sm-2 ml-1"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-               />
-               <button
-                  className="btn btn-outline-success my-2 my-sm-0"
-                  type="submit"
-               >
-                  Search
-               </button>
-            </form>
+            <Search />
          </div>
       </nav>
    );
